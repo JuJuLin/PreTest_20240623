@@ -13,7 +13,7 @@ interface I_RoomAllocation {
 const RoomAllocation = ({ guest, rooms, onChange }: I_RoomAllocation) => {
   const [unAllotGuest, setUnAllotGuest] = useState({ adult: 0, child: 0 });
   const [roomalloction, setRoomalloction] = useState(getDefaultRoomAllocation(guest, rooms));
-  let roomMax = rooms.length;
+  const roomMax = rooms.length;
 
   const handleInputNumberOnBlur = (e: any) => {
     console.log('blur e.target.value', e.target.value);
