@@ -1,0 +1,48 @@
+.content {
+  background-color: #fff;
+  padding: 15px;
+  width: 400px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.notice {
+  font-size: 14px;
+  background-color: #f0faff;
+  padding: 20px 15px;
+  border-radius: 5px;
+  border: 1px solid #ddf0f9;
+  color: #909495;
+}
+
+.roomTitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 3;
+}
+
+.roomBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.peple {
+  padding-top: 8px;
+}
+
+.pepleTitle {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.year {
+  color: #999;
+}
+
+.border {
+  border-top: 1px solid #ccc;
+}

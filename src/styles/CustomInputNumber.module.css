@@ -1,0 +1,78 @@
+.content {
+  position: relative;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #5cabd4;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.min {
+  composes: button;
+  &::before {
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    content: '';
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #5cabd4;
+  }
+}
+
+.max {
+  composes: button;
+  &::before {
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    content: '';
+    display: block;
+    width: 26px;
+    height: 2px;
+
+    background-color: #5cabd4;
+  }
+  &::after {
+    position: absolute;
+    left: 22px;
+    top: 10px;
+    content: '';
+    display: block;
+    width: 2px;
+    height: 26px;
+    background-color: #5cabd4;
+  }
+}
+
+.input {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.disabled {
+  border-color: #a7d1e8;
+  cursor: no-drop;
+  &::before,
+  &::after {
+    background-color: #a7d1e8;
+  }
+}
